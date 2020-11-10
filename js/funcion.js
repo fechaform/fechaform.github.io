@@ -29,8 +29,6 @@ function procesa() {
       + fecha.toGMTString() +
       (fechaValueAsDate ? "|valueAsDate: " + fechaValueAsDate.toGMTString() : "");
   
-      miFecha = (fecha.getDate() + 1) + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear();
-
   salidaHora.textContent = txtHora.type + "|" + txtHora.value + "|"
       + hora.toISOString();
   salidaFechaYHora.textContent = txtFechaYHora.type + "|" + txtFechaYHora.value + "|"
@@ -41,5 +39,4 @@ function procesa() {
       (semana ? "|" + semana.toISOString() : "");
   salidaMes.textContent = txtMes.type + "|" + txtMes.value +
       (mes ? "|" + mes.toISOString() : "");
-      
 }
